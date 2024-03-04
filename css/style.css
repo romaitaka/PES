@@ -71,6 +71,11 @@ a:focus {
     align-items: center;
 }
 
+.container__column {
+    display: flex;
+    flex-direction: column;
+}
+
 .logo {
     display: block;
     width: 72px;
@@ -88,27 +93,69 @@ a:focus {
     font-weight: 400;
 }
 
-/* @keyframes lol {
+/* main-banner */
 
-    0%,
-    100% {
-        color: red;
-    }
-
-    33% {
-        color: green;
-    }
-
-    67% {
-        color: blue;
-    }
+.main-banner {
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-left: 50px;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/main-img.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: #fff;
 }
 
-.lol {
-    animation: lol 3s infinite;
-    margin: 0 auto;
-    font-size: 78px;
-} */
+.main-banner__title {
+    font-size: 55px;
+    line-height: 50px;
+    margin-top: 15px;
+    font-weight: 900;
+}
 
+.main-banner__text {
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+/* main-banner */
+
+/* catalog */
+.catalog {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+    padding-bottom: 200px;
+    font-family: 'Geometria', sans-serif;
+    font-weight: 400;
+}
+
+.catalog__title {
+    font-size: 2.875rem;
+    font-weight: 800;
+}
+
+.catalog__link {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.catalog__link a{
+    margin-inline: 4px;
+    cursor: pointer;
+    color: #2a6cee;
+}
+
+
+
+/* catalog */
 
 /* main content */

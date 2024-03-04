@@ -15,3 +15,29 @@
     align-items: center;
     justify-content: center;
 }
+
+.call-button:hover {}
+
+.choose-project {
+    margin-top: 40px;
+    display: inline-block;
+    width: 218px;
+    font-family: 'Proxima Nova Semi', sans-serif;
+    font-size: 13px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 170px;
+    padding: 18px 25px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #e30613;
+    outline: 0;
+    background: #e30613;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0.25rem;
+}
