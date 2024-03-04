@@ -1,0 +1,40 @@
+.header {
+    height: 157px;
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+    width: inherit;
+    height: inherit;
+}
+
+.whatsapp-link {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 38.65px;
+    font-family: 'Geometria', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2d3134;
+    font-size: 16px;
+}
+
+.nav-item {
+    padding: 10px 0;
+}
+
+.phone-number {
+    display: block;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+    color: #54555a;
+    margin: 0 20px 0 30px;
+}

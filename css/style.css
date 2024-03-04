@@ -1,0 +1,114 @@
+@import url(header.css);
+@import url(fonts.css);
+@import url(buttons.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Обнуляем margin и padding для body и устанавливаем smooth scroll */
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    /* Для плавного скроллинга на iOS */
+}
+
+/* Обнуляем margin и padding для всех элементов заголовков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для наведения (hover), фокуса (focus) и нажатия (active) */
+/* a:hover,
+a:focus {
+    text-decoration: underline;
+} */
+
+.container {
+    margin: 0 auto;
+    width: 1680px;
+    padding-inline: 30px;
+}
+
+.container__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin-right: 1.875rem;
+}
+
+/* main content */
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Geometria', sans-serif;
+    font-weight: 400;
+}
+
+/* @keyframes lol {
+
+    0%,
+    100% {
+        color: red;
+    }
+
+    33% {
+        color: green;
+    }
+
+    67% {
+        color: blue;
+    }
+}
+
+.lol {
+    animation: lol 3s infinite;
+    margin: 0 auto;
+    font-size: 78px;
+} */
+
+
+/* main content */

@@ -1,0 +1,17 @@
+.call-button {
+    font-family: 'Proxima Nova Semi', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 18px 25px;
+    cursor: pointer;
+    color: #fff;
+    min-width: 170px;
+    border-radius: 0.25rem;
+    border: 2px solid #e30613;
+    background: #e30613;
+    height: 2.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

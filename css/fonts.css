@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/geometria_light.otf') format('opentype');
+    font-weight: 300;
+    /* Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/geometria_lightitalic.otf') format('opentype');
+    font-weight: 300;
+    /* Light */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/geometria_bold.otf') format('opentype');
+    font-weight: 700;
+    /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/geometria_bolditalic.otf') format('opentype');
+    font-weight: 700;
+    /* Bold */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/geometria_extrabold.otf') format('opentype');
+    font-weight: 800;
+    /* ExtraBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/geometria_medium.otf') format('opentype');
+    font-weight: 500;
+    /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('fonts/geometria_mediumitalic.otf') format('opentype');
+    font-weight: 500;
+    /* Medium */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/ofont.ru_Proxima Nova.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Пример использования шрифта в вашем CSS */
+body {
+    font-family: 'Geometria', sans-serif;
+}
+
+strong {
+    font-weight: 700;
+    /* Bold */
+}
+
+em {
+    font-style: italic;
+}
