@@ -1,6 +1,7 @@
 @import url(header.css);
 @import url(fonts.css);
 @import url(buttons.css);
+@import url(vendor/codepen.css);
 
 html {
     scroll-behavior: smooth;
@@ -67,8 +68,8 @@ a:focus {
 
 .container__flex {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .container__column {
@@ -80,7 +81,6 @@ a:focus {
     display: block;
     width: 72px;
     height: 72px;
-    margin-right: 1.875rem;
 }
 
 /* main content */
@@ -148,14 +148,106 @@ a:focus {
     line-height: 22px;
 }
 
-.catalog__link a{
+.catalog__link a {
     margin-inline: 4px;
     cursor: pointer;
     color: #2a6cee;
 }
 
+.projects-wrapper {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.card-param__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
 
+.card-param__block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-param__img {
+    width: 15px;
+    height: 15px;
+}
+
+.card-param__text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-content span {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.card-content p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* new card styles */
+/* Card */
+.card {
+    /* остальные стили карточки */
+    position: relative;
+    /* убедитесь, что карточка имеет относительное позиционирование */
+    overflow: hidden;
+    /* это гарантирует, что никакие дочерние элементы не выходят за пределы карточки */
+    /* другие стили */
+}
+
+.card__img {
+    /* стили изображения карточки */
+    /* другие стили */
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    /* черный цвет с нулевой прозрачностью - нет затемнения по умолчанию */
+    transition: background-color .3s ease-in-out;
+    z-index: 1;
+    /* Убедитесь, что затемняющий слой находится между изображением и текстом/кнопками */
+}
+
+.card:hover::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* черный цвет с прозрачностью, создает эффект затемнения при наведении */
+}
+
+.card-title,
+.card-content p,
+.card-button {
+    /* стили для текста и кнопки */
+    z-index: 2;
+    /* убедитесь, что текст и кнопки находятся поверх затемняющего слоя */
+    /* другие стили */
+}
+
+/* Стили для наведения на карточку, чтобы текст стал видимым */
+.card:hover .card-title,
+.card:hover .card-content p,
+.card:hover .card-button {
+    opacity: 1;
+    /* другие стили */
+}
+
+/* new card styles */
 /* catalog */
 
 /* main content */

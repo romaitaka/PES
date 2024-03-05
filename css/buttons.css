@@ -1,6 +1,6 @@
 .call-button {
     font-family: 'Proxima Nova Semi', sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
     padding: 18px 25px;
@@ -8,22 +8,25 @@
     color: #fff;
     min-width: 170px;
     border-radius: 0.25rem;
-    border: 2px solid #e30613;
-    background: #e30613;
+    border: 1px solid black;
+    background: black;
     height: 2.625rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.call-button:hover {}
+.call-button:hover {
+    background: #fff;
+    color: black;
+}
 
 .choose-project {
     margin-top: 40px;
     display: inline-block;
     width: 218px;
     font-family: 'Proxima Nova Semi', sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.2;
     display: flex;
     align-items: center;
@@ -34,10 +37,33 @@
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    border: 2px solid #e30613;
     outline: 0;
-    background: #e30613;
+    border: 1px solid black;
+    background: black;
     font-size: 16px;
     font-weight: 500;
     border-radius: 0.25rem;
+}
+
+.choose-project:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+}
+
+.card-button {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    /* Опционально: небольшая тень для кнопки, чтобы она выглядела приподнятой */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.card-button:active {
+    /* При нажатии кнопка немного опускается вниз */
+    transform: translateY(4px);
+    /* Опционально: уменьшаем тень, чтобы создать эффект прижатия */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }

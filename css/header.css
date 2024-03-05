@@ -10,14 +10,20 @@
 }
 
 .whatsapp-link {
-    width: 30px;
-    height: 30px;
+    width: 42px;
+    height: 42px;
 }
+
+.whatsapp-button {
+    width: inherit;
+    height: inherit;
+}
+
 
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 38.65px;
+    gap: 35px;
     font-family: 'Geometria', sans-serif;
     font-size: 1rem;
     font-weight: 500;
@@ -29,6 +35,13 @@
     padding: 10px 0;
 }
 
+.nav-contacts {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    gap: 10px;
+}
+
 .phone-number {
     display: block;
     font-size: 1em;
@@ -36,5 +49,4 @@
     line-height: 1.1;
     text-align: center;
     color: #54555a;
-    margin: 0 20px 0 30px;
 }
