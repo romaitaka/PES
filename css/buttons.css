@@ -5,11 +5,11 @@
     line-height: 1.2;
     padding: 18px 25px;
     cursor: pointer;
-    color: #fff;
+    color: black;
     min-width: 170px;
     border-radius: 0.25rem;
     border: 1px solid black;
-    background: black;
+    background: white;
     height: 2.625rem;
     display: flex;
     align-items: center;
@@ -17,8 +17,8 @@
 }
 
 .call-button:hover {
-    background: #fff;
-    color: black;
+    background: black;
+    color: white;
 }
 
 .choose-project {

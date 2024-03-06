@@ -1,7 +1,14 @@
 .header {
-    height: 157px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* height: 157px; */
+    padding-block: 25px;
     display: flex;
     align-items: center;
+    background-color: #2d3134;
+    color: white;
 }
 
 .logo__img {
@@ -27,11 +34,12 @@
     font-family: 'Geometria', sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    color: #2d3134;
     font-size: 16px;
+    color: inherit;
 }
 
 .nav-item {
+    color: inherit;
     padding: 10px 0;
 }
 
@@ -40,6 +48,7 @@
     align-items: center;
     margin-right: 0;
     gap: 20px;
+    color: inherit;
 }
 
 .phone-number {
@@ -48,5 +57,5 @@
     font-weight: 700;
     line-height: 1.1;
     text-align: center;
-    color: #54555a;
+    color: inherit;
 }

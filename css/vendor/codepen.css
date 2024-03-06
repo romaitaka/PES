@@ -1,10 +1,11 @@
 /* link:hover */
 
 .link-hover {
+    color: white;
     background-image: linear-gradient(to right,
             #54b3d6,
             #54b3d6 50%,
-            #000 50%);
+            white 50%);
     background-size: 200% 100%;
     background-position: -100%;
     display: inline-block;

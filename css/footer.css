@@ -1,0 +1,27 @@
+.footer {
+    background-color: #2d3134;
+    height: 157px;
+    display: flex;
+    align-items: center;
+    color: white !important;
+}
+
+.nav-menu_mod {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    font-family: 'Geometria', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2d3134;
+    font-size: 16px;
+}
+
+.phone-number_mod {
+    display: block;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+    color: white;
+}
