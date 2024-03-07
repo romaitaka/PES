@@ -17,7 +17,7 @@
 }
 
 .call-button:hover {
-    background: black;
+    background: #4E342B;
     color: white;
 }
 
@@ -38,8 +38,8 @@
     text-transform: uppercase;
     color: #fff;
     outline: 0;
-    border: 1px solid black;
-    background: black;
+    border: 1px solid #219653;
+    background: #219653;
     font-size: 16px;
     font-weight: 500;
     border-radius: 0.25rem;
@@ -52,13 +52,13 @@
 
 .card-button {
     display: inline-block;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 5px 10px;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    padding: 10px 20px;
     transition: transform 0.1s ease, box-shadow 0.1s ease;
     /* Опционально: небольшая тень для кнопки, чтобы она выглядела приподнятой */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    background-color: rgba(0, 0, 0, .6);
+    background-color: #219653;
 }
 
 .card-button:active {

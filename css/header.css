@@ -7,21 +7,27 @@
     padding-block: 25px;
     display: flex;
     align-items: center;
-    background-color: #2d3134;
+    background-color: #219653;
     color: white;
 }
 
 .logo__img {
-    width: inherit;
-    height: inherit;
+    width: 140px;
+    height: 58px;
 }
 
-.whatsapp-link {
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-left: 25px;
+}
+
+.social-link {
     width: 42px;
     height: 42px;
 }
 
-.whatsapp-button {
+.social-button {
     width: inherit;
     height: inherit;
 }
@@ -52,7 +58,9 @@
 }
 
 .phone-number {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
     font-size: 1em;
     font-weight: 700;
     line-height: 1.1;

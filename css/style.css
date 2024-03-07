@@ -88,8 +88,8 @@ a:focus {
 
 .logo {
     display: block;
-    width: 72px;
-    height: 72px;
+    background-color: #fff;
+    padding: 5px;
 }
 
 /* main content */
@@ -272,7 +272,7 @@ a:focus {
 .about-us__main-block {
     width: 48%;
     padding: 150px 100px;
-    background-color: black;
+    background-color: #219653;
     border-radius: 30px;
     font-style: normal;
     font-weight: 600;
@@ -304,7 +304,7 @@ a:focus {
     width: 100px;
     height: 100px;
     text-align: center;
-    background: black;
+    background: #219653;
     border-radius: 0px 0px 20px 20px;
     padding-top: 20px;
 }
