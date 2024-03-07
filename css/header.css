@@ -3,28 +3,86 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    /* height: 157px; */
-    padding-block: 25px;
+    padding-top: 28px;
+    padding-bottom: 8px;
     display: flex;
     align-items: center;
-    background-color: #219653;
-    color: white;
+    color: #4E342B;
+    background-image: url('../img/header-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+
+}
+
+.container__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__Up {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 89px;
+}
+
+.header__left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: end;
+    justify-content: flex-start;
+    padding-bottom: 45px;
+    flex: 0 0 42vw;
+    border-bottom: 1px solid black;
+}
+
+.header__adres {
+    font-size: 14px;
+    line-height: 15px;
+    width: 250px;
+}
+
+.header__adres2 {
+    font-size: 14px;
+    line-height: 15px;
+    width: 270px;
+}
+
+.phone-number {
+    color: inherit;
+}
+
+.header__right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+    justify-content: flex-start;
+    padding-bottom: 45px;
+    flex: 0 0 42vw;
+    border-bottom: 1px solid black;
 }
 
 .logo__img {
-    width: 140px;
-    height: 58px;
+    width: inherit;
+    height: inherit;
 }
 
 .socials {
     display: flex;
     gap: 10px;
-    margin-left: 25px;
+    padding-top: 21px;
+    padding-bottom: 10px;
 }
 
 .social-link {
-    width: 42px;
-    height: 42px;
+    width: 21px;
+    height: 21px;
 }
 
 .social-button {
@@ -36,39 +94,19 @@
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 35px;
-    font-family: 'Geometria', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    font-size: 16px;
-    color: inherit;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .nav-item {
     color: inherit;
-    padding: 10px 0;
+    padding-inline: 20px;
+    padding-top: 21px;
+    padding-bottom: 10px;
 }
 
-.nav-item2 {
-    color: inherit;
-    padding: 10px 0;
-}
-
-.nav-contacts {
-    display: flex;
-    align-items: center;
-    margin-right: 0;
-    gap: 20px;
-    color: inherit;
-}
-
-.phone-number {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    font-size: 1em;
-    font-weight: 700;
-    line-height: 1.1;
-    text-align: center;
-    color: inherit;
+.link-hover:hover {
+    color: rgba(78, 52, 43, 0.5);
 }

@@ -1,5 +1,4 @@
 @import url(header.css);
-@import url(fonts.css);
 @import url(buttons.css);
 @import url(vendor/codepen.css);
 @import url(footer.css);
@@ -22,6 +21,8 @@ body {
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     /* Для плавного скроллинга на iOS */
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
 }
 
 /* Обнуляем margin и padding для всех элементов заголовков */
@@ -72,7 +73,7 @@ a:focus {
 .container__flex {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .container__column {
@@ -88,8 +89,9 @@ a:focus {
 
 .logo {
     display: block;
-    /* background-color: #fff; */
-    /* padding: 5px; */
+    width: 175px;
+    height: 72px;
+    align-self: end;
 }
 
 /* main content */

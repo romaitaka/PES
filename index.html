@@ -33,31 +33,57 @@
     <!-- Мета-тег для указания автора сайта -->
     <meta name="author" content="название_вашей_компании">
     <!-- Мета-тег для указания кодировки символов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header" id="header">
-        <div class="container container__flex">
-            <!-- Логотип сайта -->
-            <a href="index.html" class="logo">
-                <img src="img/logo3x.png" alt="Логотип" class="logo__img">
-            </a>
-            <!-- Логотип сайта -->
+        <div class="container container__header">
+            <div class="header__Up">
+                <!-- Left -->
+                <div class="header__left">
+                    <p class="header__adres">
+                        <b>г. Череповец,</b> Вологодской обл.
+                        Советский пр., 99-а, оф.313 (3 этаж)
+                    </p>
+                    <div>
+                        <a href="tel:89959881040" class="phone-number link-hover">+7 921 252-06-05</a>
+                        <a href="info@lpk35.ru">info@lpk35.ru</a>
+                    </div>
+                </div>
+                <!-- Left -->
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="img/logo3x.png" alt="Логотип" class="logo__img">
+                </a>
+                <!-- Logo -->
+                <!-- Right -->
+                <div class="header__right">
+                    <p class="header__adres2">
+                        <b>Санкт-Петербург,</b> БЦ "ECO" оф. 242
+                        ул. Стародеревенская 11/2
+                    </p>
+                    <div>
+                        <a href="tel:89959881040" class="phone-number link-hover">+7 995 988-10-40</a>
+                        <a href="tel:89995328570" class="phone-number link-hover">+7 999 532-85-70</a>
+                    </div>
+                </div>
+                <!-- Right -->
+            </div>
+            <!-- Навигация -->
             <nav class="nav-menu">
                 <!-- Навигационное меню -->
                 <a href="#projects" class="nav-item link-hover">Проекты</a>
-                <a href="https://lpk35.ru/o-nas" class="nav-item2 link-hover">О нас</a>
-                <a href="https://lpk35.ru/klientu" class="nav-item2 link-hover">Клиенту</a>
                 <a href="#contacts" class="nav-item link-hover">Контакты</a>
-            </nav>
-            <div class="nav-contacts">
-                <div class="phone-number">
-                    <a href="tel:89959881040" class="link-hover">+7 995 988-10-40</a>
-                    <a href="tel:89995328570" class="link-hover">+7 999 532-85-70</a>
-                </div>
-                <!-- <button class="call-button" id="openModal">Заказать звонок</button> -->
+                <a href="https://lpk35.ru/o-nas" class="nav-item link-hover">О нас</a>
+                <a href="https://lpk35.ru/klientu" class="nav-item link-hover">Клиенту</a>
                 <div class="socials">
                     <!-- WhatsApp -->
                     <a href="https://wa.me/79212520605" target="_blank" class="social-link">
@@ -74,30 +100,28 @@
                         <img src="img/instagram.png" alt="VK" class="social-button">
                     </a>
                     <!-- Instagram -->
-
-
                 </div>
-
-                <!-- Модальное окно -->
-                <div id="feedbackModal" class="modal">
-                    <!-- Содержимое модального окна -->
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <form id="feedbackForm">
-                            <input type="text" placeholder="Имя" name="name" required class="modal-input"
-                                pattern="[А-Яа-яЁё-]+" title="Только русские буквы и дефис">
-                            <input type="tel" placeholder="Телефон" name="phone" required class="modal-input"
-                                title="Телефон должен начинаться с +7 и содержать 10 цифр после него">
-                            <textarea placeholder="Комментарий" name="comment" required
-                                class="modal-textarea"></textarea>
-                            <button type="submit" class="feedbackForm-button">Отправить</button>
-                        </form>
-                    </div>
+            </nav>
+            <!-- <button class="call-button" id="openModal">Заказать звонок</button> -->
+            <!-- Модальное окно -->
+            <div id="feedbackModal" class="modal">
+                <!-- Содержимое модального окна -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form id="feedbackForm">
+                        <input type="text" placeholder="Имя" name="name" required class="modal-input"
+                            pattern="[А-Яа-яЁё-]+" title="Только русские буквы и дефис">
+                        <input type="tel" placeholder="Телефон" name="phone" required class="modal-input"
+                            title="Телефон должен начинаться с +7 и содержать 10 цифр после него">
+                        <textarea placeholder="Комментарий" name="comment" required class="modal-textarea"></textarea>
+                        <button type="submit" class="feedbackForm-button">Отправить</button>
+                    </form>
                 </div>
-                <!-- Модальное окно -->
-
-
             </div>
+            <!-- Модальное окно -->
+            <!-- Контакты -->
+
+
         </div>
     </header>
     <main class="content">
