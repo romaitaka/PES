@@ -16,3 +16,15 @@
     transform: scale(1.1);
 }
 
+.one-item__house1 {
+    background-image: url('../img/card1.jpg');
+    /* Укажите правильный путь к изображению */
+    height: 640px;
+    width: 100%;
+    background-size: cover;
+    /* Обеспечивает покрытие всей доступной ширины */
+    background-position: center;
+    /* Центрирование изображения */
+    background-repeat: no-repeat;
+    /* Избегаем повторения изображения */
+}
