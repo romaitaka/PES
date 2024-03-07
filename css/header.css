@@ -49,6 +49,11 @@
     padding: 10px 0;
 }
 
+.nav-item2 {
+    color: inherit;
+    padding: 10px 0;
+}
+
 .nav-contacts {
     display: flex;
     align-items: center;

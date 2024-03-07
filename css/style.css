@@ -88,8 +88,8 @@ a:focus {
 
 .logo {
     display: block;
-    background-color: #fff;
-    padding: 5px;
+    /* background-color: #fff; */
+    /* padding: 5px; */
 }
 
 /* main content */
