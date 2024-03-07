@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каркасные Дома с Завода | Изготовление и Продажа</title>
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
+    <!-- Описание сайта -->
+    <meta name="description"
+        content="Ведущий производитель каркасных домов. Предлагаем широкий ассортимент качественных и экологичных домов прямо с завода с быстрой доставкой и установкой.">
+    <!-- Ключевые слова -->
+    <meta name="keywords"
+        content="каркасные дома, строительство домов, дома с завода, купить каркасный дом, готовые дома, экологичные дома, качественные дома, быстрое строительство">
+    <!-- Мета-теги для социальных сетей -->
+    <!-- Open Graph для Facebook -->
+    <meta property="og:title" content="Каркасные Дома с Завода | Изготовление и Продажа" />
+    <meta property="og:description"
+        content="Ведущий производитель каркасных домов с полным спектром услуг от производства до установки. Постройте дом вашей мечты с нами." />
+    <meta property="og:image" content="url_к_изображению_дома.jpg" />
+    <meta property="og:url" content="url_вашего_сайта.com" />
+    <!-- Twitter Card data -->
+    <meta name="twitter:title" content="Каркасные Дома с Завода | Изготовление и Продажа">
+    <meta name="twitter:description"
+        content="Получите качественный и устойчивый дом с завода быстро и без хлопот. Закажите просмотр или консультацию сейчас.">
+    <meta name="twitter:image" content="url_к_изображению_дома.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Указываем поисковым системам, что сайт должен индексироваться -->
+    <meta name="robots" content="index, follow">
+    <!-- Адаптивный дизайн для мобильных устройств -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Другие мета-теги -->
+    <!-- Мета-тег для указания автора сайта -->
+    <meta name="author" content="название_вашей_компании">
+    <!-- Мета-тег для указания кодировки символов -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container container__flex">
+            <!-- Логотип сайта -->
+            <a href="index.html" class="logo">
+                <img src="img/logo.webp" alt="Логотип" class="logo__img">
+            </a>
+            <!-- Логотип сайта -->
+            <nav class="nav-menu">
+                <!-- Навигационное меню -->
+                <a href="#projects" class="nav-item link-hover">Проекты</a>
+                <a href="#about-us" class="nav-item link-hover">О нас</a>
+                <a href="#values-section" class="nav-item link-hover">Наша миссия</a>
+                <a href="#reviews" class="nav-item link-hover">Отзывы</a>
+                <a href="#contacts" class="nav-item link-hover">Контакты</a>
+            </nav>
+            <div class="nav-contacts">
+                <!-- Кнопка WhatsApp -->
+                <a href="https://wa.me/79855034242" target="_blank" class="whatsapp-link">
+                    <img src="img/whatsapp__white.svg" alt="WhatsApp" class="whatsapp-button">
+                </a>
+                <div class="phone-number link-hover">
+                    <!-- Номер телефона -->
+                    <a href="tel:88005553535">8 800 555 35 35</a>
+                </div>
+                <button class="call-button" id="openModal">Заказать звонок</button>
+
+
+                <!-- Модальное окно -->
+                <div id="feedbackModal" class="modal">
+                    <!-- Содержимое модального окна -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <form id="feedbackForm">
+                            <input type="text" placeholder="Имя" name="name" required class="modal-input"
+                                pattern="[А-Яа-яЁё-]+" title="Только русские буквы и дефис">
+                            <input type="tel" placeholder="Телефон" name="phone" required class="modal-input"
+                                title="Телефон должен начинаться с +7 и содержать 10 цифр после него">
+                            <textarea placeholder="Комментарий" name="comment" required
+                                class="modal-textarea"></textarea>
+                            <button type="submit" class="feedbackForm-button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Модальное окно -->
+
+
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <div class="container">
+            <div class="bread-crumbs">
+                <a href="index.html" class="bread-crumbs__text-style">Главная</a>
+                <p class="bread-crumbs__text-style">—</p>
+                <a href="index.html#projects" class="bread-crumbs__text-style">Проекты</a>
+                <p class="bread-crumbs__text-style">—</p>
+                <a href="" class="bread-crumbs__text-style">ГОГЕН</a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container container__flex">
+            <a href="index.html" class="logo">
+                <img src="img/logo.webp" alt="Логотип" class="logo__img">
+            </a>
+            <!-- Логотип сайта -->
+            <div class="nav-contacts">
+                <!-- Кнопка WhatsApp -->
+                <a href="https://wa.me/79855034242" target="_blank" class="whatsapp-link">
+                    <img src="img/whatsapp__white.svg" alt="WhatsApp" class="whatsapp-button">
+                </a>
+                <div class="phone-number link-hover">
+                    <!-- Номер телефона -->
+                    <a href="tel:88005553535">8 800 555 35 35</a>
+                </div>
+                <button class="call-button">Заказать звонок</button>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

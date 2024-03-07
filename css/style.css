@@ -3,6 +3,7 @@
 @import url(buttons.css);
 @import url(vendor/codepen.css);
 @import url(footer.css);
+@import url(one-style.css);
 
 html {
     scroll-behavior: smooth;
@@ -99,6 +100,7 @@ a:focus {
     padding: 0;
     font-family: 'Geometria', sans-serif;
     font-weight: 400;
+    border-top: 1px solid #373737;
 }
 
 /* main-banner */

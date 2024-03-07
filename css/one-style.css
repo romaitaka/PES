@@ -1,0 +1,17 @@
+.bread-crumbs {
+    display: flex;
+    gap: 15px;
+}
+
+.bread-crumbs__text-style {
+    color: #9497A3;
+    cursor: pointer;
+    font-size: 16px;
+    padding-block: 15px;
+    transition: transform 0.3 ease;
+}
+
+.bread-crumbs__text-style:hover {
+    color: coral;
+    transform: scale(1.1);
+}
