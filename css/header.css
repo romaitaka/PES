@@ -80,15 +80,22 @@
 
 .socials {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     padding-top: 21px;
     padding-bottom: 10px;
+    margin-left: 20px;
 }
 
 .social-link {
-    width: 21px;
-    height: 21px;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2 ease;
 }
+
+.social-link:hover {
+    transform: scale(1.2);
+}
+
 
 .social-button {
     width: inherit;
@@ -158,10 +165,11 @@
     background: #219653;
 }
 
-
-
-/* .link-hover {
-    color: #4E342B;
+.nav-item2 {
+    color: inherit;
+    padding-inline: 20px;
+    padding-top: 21px;
+    padding-bottom: 10px;
     font-size: 14px;
     line-height: 17px;
     font-weight: bold;
@@ -170,15 +178,16 @@
     transition: .3s;
 }
 
-.link-hover:hover:before {
-    opacity: 1;
-}
-
-.link-hover:hover {
+.nav-item2:hover {
     color: rgba(78, 52, 43, 0.5);
 }
 
-.link-hover:before {
+.nav-item2:hover:before {
+    color: rgba(78, 52, 43, 0.5);
+    opacity: 1;
+}
+
+.nav-item2::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -189,5 +198,20 @@
     background-repeat: no-repeat;
     transition-delay: .1s;
     width: 11px;
+    opacity: 0;
+}
 
-} */
+.nav-item2:hover:after {
+    width: 100%;
+}
+
+.nav-item2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    transition: .3s;
+    bottom: 0;
+    height: 2px;
+    background: #219653;
+}
