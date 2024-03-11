@@ -54,7 +54,12 @@
 }
 
 .phone-number {
-    color: inherit;
+    color: #4E342B;
+    font-weight: 700;
+    color: #4E342B;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .header__right {
@@ -98,6 +103,7 @@
     line-height: 17px;
     font-weight: bold;
     text-transform: uppercase;
+    justify-content: space-between;
 }
 
 .nav-item {
@@ -105,8 +111,83 @@
     padding-inline: 20px;
     padding-top: 21px;
     padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    transition: .3s;
+}
+
+
+.nav-item:hover {
+    color: rgba(78, 52, 43, 0.5);
+}
+
+.nav-item:hover:before {
+    color: rgba(78, 52, 43, 0.5);
+    opacity: 1;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1px;
+    background-image: url(../img/traaingle-icon.svg);
+    height: 6px;
+    background-repeat: no-repeat;
+    transition-delay: .1s;
+    width: 11px;
+    opacity: 0;
+}
+
+.nav-item:hover:after {
+    width: 100%;
+}
+
+.nav-item:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    transition: .3s;
+    bottom: 0;
+    height: 2px;
+    background: #219653;
+}
+
+
+
+/* .link-hover {
+    color: #4E342B;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    transition: .3s;
+}
+
+.link-hover:hover:before {
+    opacity: 1;
 }
 
 .link-hover:hover {
     color: rgba(78, 52, 43, 0.5);
 }
+
+.link-hover:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1px;
+    background-image: url(../img/traaingle-icon.svg);
+    height: 6px;
+    background-repeat: no-repeat;
+    transition-delay: .1s;
+    width: 11px;
+
+} */
