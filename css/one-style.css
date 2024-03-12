@@ -95,18 +95,80 @@
 
 .feature__slider-main {
     width: 100%;
-    padding-top: 56.25%;
-    /* 9 / 16 = 0.5625 * 100% для соотношения сторон 16:9 */
-    background-image: url('../img/GOGEN_pic1.jpg');
-    background-size: cover;
-    background-position: center;
     border-radius: 4px;
     cursor: pointer;
     position: relative;
 }
 
+.feature__slider-main-img {
+    width: 100%;
+    display: none;
+}
 
-.feature__slider-button {
+.feature__slider-main-img.show {
+    display: block;
+}
+
+/* Modal window img */
+
+.modal_img {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Стиль для изображения внутри модального окна */
+.modal-content-img {
+    margin: auto;
+    margin-top: 5%;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    /* Максимальная ширина изображения */
+}
+
+/* Стиль для закрывающего элемента (крестика) */
+.close-img {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-img:hover,
+.close-img:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Дополнительные стили для подписи под изображением */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Modal window img */
+
+
+
+.feature__slider-button_right {
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -117,16 +179,74 @@
     width: 4rem;
     height: 4rem;
     cursor: pointer;
-    border-radius: 0.625rem; // Скругление углов
+    border-radius: 0.625rem;
     background: #fff;
-    box-shadow: 0 10px 35px -10px rgba(18,19,17,.2);
-    align-items: center; // Выравнивание содержимого по вертикали
-    justify-content: center; // Выравнивание содержимого по горизонтали
+    box-shadow: 0 10px 35px -10px rgba(18, 19, 17, .2);
+    align-items: center;
+    justify-content: center;
 }
+
+
+.feature__slider-button_left {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: -2rem;
+    transform: translateY(-50%);
+    display: flex;
+    background-color: #fff;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    border-radius: 0.625rem;
+    background: #fff;
+    box-shadow: 0 10px 35px -10px rgba(18, 19, 17, .2);
+    align-items: center;
+    justify-content: center;
+}
+
 
 .feature__slider-button-arrow {
     width: 1rem;
     height: 1rem;
     margin: auto;
     z-index: 10;
+    transition: tranform 0.3 ease;
+}
+
+.feature__slider-button-arrow:hover {
+    transform: scale(1.4);
+}
+
+.feature__slider-button-arrow_rotate {
+    rotate: 180deg;
+    width: 1rem;
+    height: 1rem;
+    margin: auto;
+    z-index: 10;
+    transition: tranform 0.3 ease;
+}
+
+.feature__slider-button-arrow_rotate:hover {
+    transform: scale(1.4);
+}
+
+.feature__slider-swipper {
+    display: flex;
+    gap: 15px;
+    height: 79px;
+}
+
+.feature__slider-mini-img {
+    height: 100%;
+    width: 115px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: opacity .2s ease;
+    opacity: .5;
+}
+
+.feature__slider-mini-img.active {
+    opacity: 1;
 }

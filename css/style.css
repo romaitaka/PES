@@ -142,8 +142,7 @@ a:focus {
     display: block;
     margin: 0;
     padding: 0;
-    padding-top: 200px;
-    padding-bottom: 130px;
+    padding-block: 50px;
     font-family: 'Geometria', sans-serif;
     font-weight: 400;
 }
@@ -264,8 +263,7 @@ a:focus {
 /* abouts-us */
 
 .about-us {
-    padding-top: 150px;
-    padding-bottom: 130px;
+    padding-block: 50px;
 }
 
 
@@ -451,8 +449,7 @@ textarea {
     font-weight: 500;
     line-height: 1.1em;
     letter-spacing: 0.8px;
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-block: 50px;
 }
 
 .value-wrapper {
@@ -503,8 +500,7 @@ textarea {
 /* Contacts */
 
 .contacts {
-    padding-top: 200px;
-    padding-bottom: 130px;
+    padding-block: 50px;
     display: flex;
     flex-direction: column;
     color: #000;
