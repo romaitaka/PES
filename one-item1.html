@@ -33,91 +33,227 @@
     <!-- Мета-тег для указания автора сайта -->
     <meta name="author" content="название_вашей_компании">
     <!-- Мета-тег для указания кодировки символов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header" id="header">
-        <div class="container container__flex">
-            <!-- Логотип сайта -->
-            <a href="index.html" class="logo">
-                <img src="img/logo.webp" alt="Логотип" class="logo__img">
-            </a>
-            <!-- Логотип сайта -->
-            <nav class="nav-menu">
-                <!-- Навигационное меню -->
-                <a href="#projects" class="nav-item link-hover">Проекты</a>
-                <a href="#about-us" class="nav-item link-hover">О нас</a>
-                <a href="#values-section" class="nav-item link-hover">Наша миссия</a>
-                <a href="#reviews" class="nav-item link-hover">Отзывы</a>
-                <a href="#contacts" class="nav-item link-hover">Контакты</a>
-            </nav>
-            <div class="nav-contacts">
-                <!-- Кнопка WhatsApp -->
-                <a href="https://wa.me/79855034242" target="_blank" class="whatsapp-link">
-                    <img src="img/whatsapp__white.svg" alt="WhatsApp" class="whatsapp-button">
-                </a>
-                <div class="phone-number link-hover">
-                    <!-- Номер телефона -->
-                    <a href="tel:88005553535">8 800 555 35 35</a>
-                </div>
-                <button class="call-button" id="openModal">Заказать звонок</button>
-
-
-                <!-- Модальное окно -->
-                <div id="feedbackModal" class="modal">
-                    <!-- Содержимое модального окна -->
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <form id="feedbackForm">
-                            <input type="text" placeholder="Имя" name="name" required class="modal-input"
-                                pattern="[А-Яа-яЁё-]+" title="Только русские буквы и дефис">
-                            <input type="tel" placeholder="Телефон" name="phone" required class="modal-input"
-                                title="Телефон должен начинаться с +7 и содержать 10 цифр после него">
-                            <textarea placeholder="Комментарий" name="comment" required
-                                class="modal-textarea"></textarea>
-                            <button type="submit" class="feedbackForm-button">Отправить</button>
-                        </form>
+        <div class="container container__header">
+            <div class="header__Up">
+                <!-- Left -->
+                <div class="header__left">
+                    <p class="header__adres">
+                        <b>г. Череповец,</b> Вологодской обл.
+                        Советский пр., 99-а, оф.313 (3 этаж)
+                    </p>
+                    <div>
+                        <a href="tel:89959881040" class="phone-number">+7 921 252-06-05</a>
+                        <a href="info@lpk35.ru">info@lpk35.ru</a>
                     </div>
                 </div>
-                <!-- Модальное окно -->
-
-
+                <!-- Left -->
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="img/logo3x.png" alt="Логотип" class="logo__img">
+                </a>
+                <!-- Logo -->
+                <!-- Right -->
+                <div class="header__right">
+                    <p class="header__adres2">
+                        <b>Санкт-Петербург,</b> БЦ "ECO" оф. 242
+                        ул. Стародеревенская 11/2
+                    </p>
+                    <div>
+                        <a href="tel:89959881040" class="phone-number">+7 995 988-10-40</a>
+                        <a href="tel:89995328570" class="phone-number">+7 999 532-85-70</a>
+                    </div>
+                </div>
+                <!-- Right -->
             </div>
+            <!-- Навигация -->
+            <nav class="nav-menu">
+                <!-- Навигационное меню -->
+                <a href="index.html" class="nav-item2">Главная</a>
+                <a href="#contacts" class="nav-item2">Контакты</a>
+                <a href="https://lpk35.ru/o-nas" class="nav-item2">О нас</a>
+                <a href="https://lpk35.ru/klientu" class="nav-item2">Клиенту</a>
+                <div class="socials">
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/79212520605" target="_blank" class="social-link">
+                        <img src="img/whatsapp-icon.png" alt="WhatsApp" class="social-button">
+                    </a>
+                    <!-- WhatsApp -->
+                    <!-- VK -->
+                    <a href="https://vk.com/lpk35" target="_blank" class="social-link">
+                        <img src="img/Vk.svg" alt="VK" class="social-button">
+                    </a>
+                    <!-- VK -->
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/lpk35.ru" target="_blank" class="social-link">
+                        <img src="img/instagram.png" alt="VK" class="social-button">
+                    </a>
+                    <!-- Instagram -->
+                </div>
+            </nav>
+            <!-- <button class="call-button" id="openModal">Заказать звонок</button> -->
+            <!-- Модальное окно -->
+            <div id="feedbackModal" class="modal">
+                <!-- Содержимое модального окна -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form id="feedbackForm">
+                        <input type="text" placeholder="Имя" name="name" required class="modal-input"
+                            pattern="[А-Яа-яЁё-]+" title="Только русские буквы и дефис">
+                        <input type="tel" placeholder="Телефон" name="phone" required class="modal-input"
+                            title="Телефон должен начинаться с +7 и содержать 10 цифр после него">
+                        <textarea placeholder="Комментарий" name="comment" required class="modal-textarea"></textarea>
+                        <button type="submit" class="feedbackForm-button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Модальное окно -->
+            <!-- Контакты -->
+
+
         </div>
     </header>
-    <main class="content">
-        <div class="container">
-            <div class="bread-crumbs">
-                <a href="index.html" class="bread-crumbs__text-style">Главная</a>
-                <p class="bread-crumbs__text-style">—</p>
-                <a href="index.html#projects" class="bread-crumbs__text-style">Проекты</a>
-                <p class="bread-crumbs__text-style">—</p>
-                <a href="" class="bread-crumbs__text-style">ГОГЕН</a>
-            </div>
-            <section class="one-item__house1">
-
-            </section>
+    <main class="one-style_main">
+        <div class="bread-crumbs container">
+            <a href="index.html" class="bread-crumbs__item">Главная</a>
+            <p>-</p>
+            <a href="index.html#projects" class="bread-crumbs__item">Проекты</a>
+            <p>-</p>
+            <p>ГОГЕН</p>
         </div>
-    </main>
-    <footer class="footer">
-        <div class="container container__flex">
-            <a href="index.html" class="logo">
-                <img src="img/logo.webp" alt="Логотип" class="logo__img">
-            </a>
-            <!-- Логотип сайта -->
-            <div class="nav-contacts">
-                <!-- Кнопка WhatsApp -->
-                <a href="https://wa.me/79855034242" target="_blank" class="whatsapp-link">
-                    <img src="img/whatsapp__white.svg" alt="WhatsApp" class="whatsapp-button">
-                </a>
-                <div class="phone-number link-hover">
-                    <!-- Номер телефона -->
-                    <a href="tel:88005553535">8 800 555 35 35</a>
-                </div>
-                <button class="call-button">Заказать звонок</button>
+        <div class="one-style__banner">
+            <div class="one-style__banner-overlay"></div>
+            <div class="one-style__banner-label">
+                <h1 class="one-style__banner-title">ГОГЕН</h1>
+                <p class="one-style__banner-text">от 2 497 996 руб.</p>
             </div>
+        </div>
+        <section class="feature">
+            <div class="container">
+                <div class="feature__wrapper">
+                    <div class="feature__slider-wrapper">
+                        <img src="img/GOGEN_pic1.jpg" alt="GOGEN house" class="feature__slider-main">
+                        
+                    </div>
+                    <div class="feature__params-wrapper">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container container__column">
+                <h2 class="catalog__title">Контакты</h2>
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A1dd12d42d7b7b94f6fa34b5b7a417f1bc00e19e10bc5fc286d067422fd5d6987&amp;source=constructor"
+                    width="500" height="400" frameborder="0" class="map"></iframe>
+                <div class="contacts__info-wrapper">
+                    <div class="contacts__info-phone-wrapper">
+                        <h4 class="contacts__info-title">Телефон</h4>
+                        <a href="#" class="contacts__info-link">+7 (995) 988-10-40</a>
+                    </div>
+                    <div class="contacts__info-email-wrapper">
+                        <h4 class="contacts__info-title">E-mail</h4>
+                        <a href="#" class="contacts__info-link">info@lpk35.ru</a>
+                    </div>
+                    <div class="contacts__info-adress-wrapper">
+                        <h4 class="contacts__info-title">Адрес</h4>
+                        <a href="#" class="contacts__info-link">г. Череповец, Вологодской обл.
+                            Советский пр., 99-а, оф.313 (3 этаж)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="container container__header container__header_invert">
+            <div class="header__Up">
+                <!-- Left -->
+                <div class="header__left header__left_inv">
+                    <p class="header__adres">
+                        <b>г. Череповец,</b> Вологодской обл.
+                        Советский пр., 99-а, оф.313 (3 этаж)
+                    </p>
+                    <div>
+                        <a href="tel:89959881040" class="phone-number">+7 921 252-06-05</a>
+                        <a href="info@lpk35.ru">info@lpk35.ru</a>
+                    </div>
+                </div>
+                <!-- Left -->
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="img/logo3x.png" alt="Логотип" class="logo__img">
+                </a>
+                <!-- Logo -->
+                <!-- Right -->
+                <div class="header__right header__right_inv">
+                    <p class="header__adres2">
+                        <b>Санкт-Петербург,</b> БЦ "ECO" оф. 242
+                        ул. Стародеревенская 11/2
+                    </p>
+                    <div>
+                        <a href="tel:89959881040" class="phone-number">+7 995 988-10-40</a>
+                        <a href="tel:89995328570" class="phone-number">+7 999 532-85-70</a>
+                    </div>
+                </div>
+                <!-- Right -->
+            </div>
+            <!-- Навигация -->
+            <nav class="nav-menu">
+                <!-- Навигационное меню -->
+                <a href="index.html" class="nav-item2">Главная</a>
+                <a href="#contacts" class="nav-item2">Контакты</a>
+                <a href="https://lpk35.ru/o-nas" class="nav-item2">О нас</a>
+                <a href="https://lpk35.ru/klientu" class="nav-item2">Клиенту</a>
+                <div class="socials">
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/79212520605" target="_blank" class="social-link">
+                        <img src="img/whatsapp-icon.png" alt="WhatsApp" class="social-button">
+                    </a>
+                    <!-- WhatsApp -->
+                    <!-- VK -->
+                    <a href="https://vk.com/lpk35" target="_blank" class="social-link">
+                        <img src="img/Vk.svg" alt="VK" class="social-button">
+                    </a>
+                    <!-- VK -->
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/lpk35.ru" target="_blank" class="social-link">
+                        <img src="img/instagram.png" alt="VK" class="social-button">
+                    </a>
+                    <!-- Instagram -->
+                </div>
+            </nav>
+            <!-- <button class="call-button" id="openModal">Заказать звонок</button> -->
+            <!-- Модальное окно -->
+            <div id="feedbackModal" class="modal">
+                <!-- Содержимое модального окна -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form id="feedbackForm">
+                        <input type="text" placeholder="Имя" name="name" required class="modal-input"
+                            pattern="[А-Яа-яЁё-]+" title="Только русские буквы и дефис">
+                        <input type="tel" placeholder="Телефон" name="phone" required class="modal-input"
+                            title="Телефон должен начинаться с +7 и содержать 10 цифр после него">
+                        <textarea placeholder="Комментарий" name="comment" required class="modal-textarea"></textarea>
+                        <button type="submit" class="feedbackForm-button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Модальное окно -->
+            <!-- Контакты -->
+
+
         </div>
     </footer>
     <script src="js/main.js"></script>

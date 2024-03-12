@@ -67,7 +67,6 @@ a:focus {
 .container {
     margin: 0 auto;
     width: 1200px;
-    padding-inline: 30px;
 }
 
 .container__flex {

@@ -1,30 +1,99 @@
+.one-style_main {}
+
 .bread-crumbs {
+    padding-top: 57px;
+    padding-bottom: 30px;
     display: flex;
+    color: #219653;
+    transition: .3s;
+    font-size: 16px;
+    line-height: 20px;
     gap: 15px;
 }
 
-.bread-crumbs__text-style {
-    color: #9497A3;
-    cursor: pointer;
+.bread-crumbs__item {
+    color: #219653;
+    transition: .3s;
     font-size: 16px;
-    padding-block: 15px;
-    transition: transform 0.3 ease;
+    line-height: 20px;
+
 }
 
-.bread-crumbs__text-style:hover {
-    color: coral;
-    transform: scale(1.1);
+.bread-crumbs__item:hover {
+    opacity: 0.5;
 }
 
-.one-item__house1 {
-    background-image: url('../img/card1.jpg');
-    /* Укажите правильный путь к изображению */
-    height: 640px;
-    width: 100%;
-    background-size: cover;
-    /* Обеспечивает покрытие всей доступной ширины */
-    background-position: center;
-    /* Центрирование изображения */
+.one-style__banner {
+    position: relative;
+    height: auto;
+    min-height: 640px;
+    max-height: 900px;
+    width: 100vw;
     background-repeat: no-repeat;
-    /* Избегаем повторения изображения */
+    background-position: 50%;
+    background-size: cover;
+    background-image: url('../img/card1.jpg');
 }
+
+.one-style__banner-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.one-style__banner-label {
+    position: absolute;
+    width: 1200px;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding-block: 80px;
+}
+
+.one-style__banner-title {
+    font-size: 2.875rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.one-style__banner-text {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.feature {
+    padding-block: 80px;
+}
+
+.feature__wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.feature__slider-wrapper {
+    width: 50%;
+    padding-inline: 15px;
+}
+
+.feature__params-wrapper {
+    width: 50%;
+    background-color: aquamarine;
+    padding-left: 65px;
+    padding-right: 15px;
+}
+
+.feature__slider-main {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
