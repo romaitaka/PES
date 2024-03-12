@@ -23,6 +23,7 @@ body {
     /* Для плавного скроллинга на iOS */
     font-family: "Montserrat", sans-serif;
     font-style: normal;
+    z-index: 0;
 }
 
 /* Обнуляем margin и padding для всех элементов заголовков */
