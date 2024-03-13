@@ -1,0 +1,59 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th, tbody td {
+    border: 1px solid #000;
+}
+
+thead th {
+    width: 43%;
+    padding: 22px 45px;
+    font-size: 24px;
+    line-height: 17px;
+    color: #4E342B;
+    background-color: #EFEFEF;
+    text-align: left;
+}
+
+thead th:not(:first-child) {
+    width: 19%;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4E342B;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+tbody td {
+    padding: 22px 45px;
+}
+
+.highlight td {
+    padding: 22px 45px;
+    font-size: 16px;
+    line-height: 25px;
+    color: #EBAA96;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: 20px;
+    line-height: 23px;
+    color: #219653;
+    font-weight: bold;
+}
+
+img {
+    width: 28px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+.tabler__header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

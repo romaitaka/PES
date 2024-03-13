@@ -3,6 +3,7 @@
 @import url(vendor/codepen.css);
 @import url(footer.css);
 @import url(one-style.css);
+@import url(table.css);
 
 html {
     scroll-behavior: smooth;
