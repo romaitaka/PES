@@ -69,8 +69,69 @@
     line-height: 1.1;
 }
 
+.one-style__button {
+    cursor: pointer;
+    z-index: 2000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+
+.arrow-down {
+    width: 38.41px;
+    height: 30px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Начальное и конечное положение - без смещения */
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* В середине анимации стрелка поднимается на 20 пикселей вверх */
+    }
+}
+
+.arrow-down_mod {
+    width: 38.41px;
+    height: 30px;
+    animation: bounce2 2s infinite;
+    margin-top: 20px;
+}
+
+@keyframes bounce2 {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Начальное и конечное положение - без смещения */
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* В середине анимации стрелка поднимается на 20 пикселей вверх */
+    }
+}
+
+.feature__param-price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.feature__param-price a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .feature {
-    padding-block: 80px;
+    padding-block: 100px;
 }
 
 .feature__wrapper {
@@ -285,4 +346,3 @@
     font-weight: 700;
     line-height: 1.2;
 }
-
