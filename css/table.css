@@ -51,9 +51,3 @@ img {
     height: 22px;
     vertical-align: middle;
 }
-
-.tabler__header {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
