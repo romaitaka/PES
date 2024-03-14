@@ -3,7 +3,8 @@ table {
     border-collapse: collapse;
 }
 
-thead th, tbody td {
+thead th,
+tbody td {
     border: 1px solid #000;
 }
 
@@ -23,7 +24,6 @@ thead th:not(:first-child) {
     line-height: 19px;
     color: #4E342B;
     font-weight: 400;
-    margin-bottom: 10px;
 }
 
 tbody td {
@@ -46,8 +46,9 @@ tbody td {
     font-weight: bold;
 }
 
-img {
+tbody img {
     width: 28px;
     height: 22px;
-    vertical-align: middle;
+    display: block;
+    margin-inline: auto;
 }
