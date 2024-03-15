@@ -159,3 +159,43 @@ document.addEventListener('DOMContentLoaded', function () {
     modal.style.display = "none";
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const mainImages = document.querySelectorAll('.feature__slider-main-img');
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('fullImage');
+  const captionText = document.getElementById('caption');
+  const closeButton = document.querySelector('.close-img');
+  const nextButton = document.querySelector('.modal-slider-button_right');
+  const prevButton = document.querySelector('.modal-slider-button_left');
+  let currentImageIndex = 0;
+
+  function openModal(index) {
+    modal.style.display = "block";
+    modalImg.src = mainImages[index].src;
+    captionText.innerHTML = mainImages[index].alt;
+    currentImageIndex = index;
+  }
+
+  mainImages.forEach((img, index) => {
+    img.addEventListener('click', () => openModal(index));
+  });
+
+  function changeImage(step) {
+    currentImageIndex = (currentImageIndex + step + mainImages.length) % mainImages.length;
+    modalImg.src = mainImages[currentImageIndex].src;
+    captionText.innerHTML = mainImages[currentImageIndex].alt;
+  }
+
+  nextButton.addEventListener('click', () => changeImage(1));
+  prevButton.addEventListener('click', () => changeImage(-1));
+
+  closeButton.addEventListener('click', () => modal.style.display = "none");
+
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+
