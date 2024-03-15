@@ -524,8 +524,10 @@ textarea {
 }
 
 .map {
-    width: 1110px;
+    width: 100%;
     height: 476px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contacts__info-wrapper {
