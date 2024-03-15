@@ -32,7 +32,30 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
+}
+
+.banner1 {
     background-image: url('../img/card1.jpg');
+}
+
+.banner2 {
+    background-image: url('../img/card2.jpg');
+}
+
+.banner3 {
+    background-image: url('../img/card3.jpg');
+}
+
+.banner4 {
+    background-image: url('../img/card4.jpg');
+}
+
+.banner5 {
+    background-image: url('../img/card5.jpg');
+}
+
+.banner6 {
+    background-image: url('../img/card6.jpg');
 }
 
 .one-style__banner-overlay {
@@ -309,14 +332,33 @@
 
 .feature__slider-swipper {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     gap: 15px;
-    height: 79px;
+    overflow: hidden;
+    /* Скрываем содержимое, выходящее за пределы контейнера */
 }
 
+.feature__slider-swipper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    /* overflow-x: auto; */
+}
+
+.swipper-button {
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 0;
+    /* Убираем стандартные отступы */
+    font-size: 1.5rem;
+}
+
+
 .feature__slider-mini-img {
-    height: 100%;
-    width: 115px;
+    width: 142px;
+    height: 100px;
     overflow: hidden;
     cursor: pointer;
     border-radius: 4px;
@@ -366,6 +408,10 @@
 .description {
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.padding-top {
+    padding-top: 200px;
 }
 
 .description-wrapper__with-banner {
