@@ -199,35 +199,4 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const swipperWrapper = document.querySelector('.feature__slider-swipper-wrapper');
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  swipperWrapper.addEventListener('mousedown', (e) => {
-      isDown = true;
-      swipperWrapper.classList.add('active');
-      startX = e.pageX - swipperWrapper.offsetLeft;
-      scrollLeft = swipperWrapper.scrollLeft;
-  });
-
-  swipperWrapper.addEventListener('mouseleave', () => {
-      isDown = false;
-      swipperWrapper.classList.remove('active');
-  });
-
-  swipperWrapper.addEventListener('mouseup', () => {
-      isDown = false;
-      swipperWrapper.classList.remove('active');
-  });
-
-  swipperWrapper.addEventListener('mousemove', (e) => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - swipperWrapper.offsetLeft;
-      const walk = (x - startX) * 2; //Ускорение прокрутки
-      swipperWrapper.scrollLeft = scrollLeft - walk;
-  });
-});
 

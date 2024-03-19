@@ -331,30 +331,35 @@
 }
 
 .feature__slider-swipper {
+    width: 100%;
+    max-width: 964px;
     display: flex;
     align-items: center;
     gap: 15px;
     overflow: hidden;
-    /* Скрываем содержимое, выходящее за пределы контейнера */
+    position: relative;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+        /* Здесь может потребоваться настроить процент сдвига в зависимости от общей ширины ваших изображений */
+    }
 }
 
 .feature__slider-swipper-wrapper {
     display: flex;
     flex-wrap: nowrap;
     gap: 15px;
-    /* overflow-x: auto; */
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    animation: slide 30s linear infinite;
+    /* Здесь вы можете настроить продолжительность анимации и тип анимации (linear, ease и т.д.) */
 }
-
-.swipper-button {
-    cursor: pointer;
-    background-color: #fff;
-    border: none;
-    padding: 10px;
-    margin: 0;
-    /* Убираем стандартные отступы */
-    font-size: 1.5rem;
-}
-
 
 .feature__slider-mini-img {
     width: 142px;
