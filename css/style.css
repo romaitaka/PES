@@ -4,6 +4,7 @@
 @import url(footer.css);
 @import url(one-style.css);
 @import url(table.css);
+@import url(responsive.css);
 
 html {
     scroll-behavior: smooth;

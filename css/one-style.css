@@ -226,10 +226,10 @@
 /* Стиль для изображения внутри модального окна */
 .modal-content-img {
     margin: auto;
-    margin-top: 5%;
+    margin-top: 30px;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 900px;
     /* Максимальная ширина изображения */
 }
 
@@ -340,6 +340,40 @@
     position: relative;
 }
 
+/* second Modal window */
+.modal-slider-button_left,
+.modal-slider-button_right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3000;
+}
+
+.modal-slider-button_left {
+    left: 150px;
+}
+
+.modal-slider-button_right {
+    right: 150px;
+}
+
+/* Инвертируем стрелку для левой кнопки */
+.modal-slider-button_left .modal-slider-arrow {
+    transform: rotate(180deg);
+}
+
+.modal-slider-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+/* second Modal window */
+
+
 @keyframes slide {
     from {
         transform: translateX(0);
@@ -357,7 +391,7 @@
     gap: 15px;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    animation: slide 30s linear infinite;
+    animation: slide 25s linear infinite;
     /* Здесь вы можете настроить продолжительность анимации и тип анимации (linear, ease и т.д.) */
 }
 
@@ -369,6 +403,7 @@
     border-radius: 4px;
     transition: opacity .2s ease;
     opacity: .5;
+    transition: transform .3 ease;
 }
 
 .feature__slider-mini-img.active {
@@ -473,36 +508,3 @@
 .description__banner-img {
     max-width: 110px;
 }
-
-/* second Modal window */
-.modal-slider-button_left,
-.modal-slider-button_right {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 3000;
-}
-
-.modal-slider-button_left {
-    left: 250px;
-}
-
-.modal-slider-button_right {
-    right: 250px;
-}
-
-/* Инвертируем стрелку для левой кнопки */
-.modal-slider-button_left .modal-slider-arrow {
-    transform: rotate(180deg);
-}
-
-.modal-slider-arrow {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: #fff;
-}
-
-/* second Modal window */
