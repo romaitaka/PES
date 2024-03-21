@@ -87,6 +87,7 @@ a:focus {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    justify-content: space-between;
 }
 
 .logo {
@@ -172,9 +173,8 @@ a:focus {
     display: flex;
     flex-wrap: wrap;
     gap: 15px 15px;
-    /* Первое значение отвечает за вертикальный зазор (здесь он равен 0), второе — за горизонтальный */
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 .card-param__wrapper {
