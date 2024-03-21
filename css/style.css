@@ -1,10 +1,10 @@
+@import url(vendor/normalize.css);
 @import url(header.css);
 @import url(buttons.css);
 @import url(vendor/codepen.css);
 @import url(footer.css);
 @import url(one-style.css);
 @import url(table.css);
-@import url(responsive.css);
 
 html {
     scroll-behavior: smooth;
@@ -126,7 +126,7 @@ a:focus {
 }
 
 .main-banner__title {
-    font-size: 55px;
+    font-size: clamp(35px, 4vw, 40px);
     line-height: 50px;
     margin-top: 15px;
     font-weight: 900;
@@ -134,7 +134,7 @@ a:focus {
 
 .main-banner__text {
     margin-top: 15px;
-    font-size: 35px;
+    font-size: clamp(25px, 3.5vw, 30px);
     font-weight: 500;
 }
 
@@ -556,3 +556,173 @@ textarea {
 
 /* Contacts */
 /* main content */
+
+/* Extra large screens: 1600px and above */
+/* Для очень больших настольных мониторов и телевизоров. Подходит для дизайна с большими элементами и расширенными полями, оптимизированных для широких экранов. */
+
+@media screen and (min-width: 1600px) {
+    .container {
+        width: 1500px;
+    }
+}
+
+/* Large screens: 1200px - 1599px */
+/* Для больших настольных мониторов. Адаптация под экраны чуть выше среднего размера, с улучшенным распределением контента и большим пространством для дополнительных элементов. */
+
+@media screen and (max-width: 1599px) {
+    .container {
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    .feature__wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .feature__slider-wrapper {
+        padding-inline: 0;
+        padding-left: 40px;
+    }
+
+    .feature__params-wrapper {
+        padding: 0;
+        padding-left: 50px;
+    }
+
+    .description-wrapper__with-banner {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-inline: 10px;
+    }
+}
+
+/* Large: 992px - 1199px */
+/* Для настольных компьютеров и некоторых планшетов в горизонтальном режиме. Идеально подходит для сайтов с богатым контентом и сложной структурой. */
+
+@media screen and (max-width: 1199px) {
+    .container {
+        width: 850px;
+    }
+
+    .container__column {
+        width: 850px
+    }
+
+    .container__header {
+        width: 850px;
+    }
+
+    .header__left {
+        flex: 0;
+        width: 32%;
+    }
+
+    .header__right {
+        flex: 0;
+        width: 32%;
+    }
+
+    .projects-wrapper {
+        gap: 10px 10px;
+
+    }
+
+    .card-wrapper {
+        width: 49%;
+        height: 70vh;
+    }
+
+    .container__wrap {
+        gap: 0px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog__title {
+        text-align: center;
+    }
+
+    .main-banner {
+        height: 70vh;
+    }
+
+    .about-us__main-block {
+        width: 100%;
+        padding: 75px 50px;
+        text-align: center;
+    }
+
+    .about-us__block {
+        width: 80%;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 40px;
+        padding-bottom: 60px;
+    }
+
+    .value-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .value {
+        width: 85%;
+    }
+
+    .description__banner-img-wrapper {
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    .one-style__banner-label {
+        max-width: 850px;
+    }
+
+
+}
+
+/* Medium: 768px - 991px */
+/* Для планшетов и крупных смартфонов в горизонтальном режиме. Адаптация для удобного чтения и взаимодействия с контентом без необходимости масштабирования. */
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 700px;
+    }
+
+    .one-style__banner-label {
+        max-width: 700px;
+    }
+
+    .feature {
+        padding-block: 50px;
+    }
+
+    .one-style__banner {
+        height: 70vh;
+    }
+}
+
+/* Small: 576px - 767px */
+/* Для малых и средних смартфонов в портретном режиме. Оптимизация интерфейса и размера контента для удобства чтения и навигации одной рукой. */
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 500px;
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+/* Для самых маленьких устройств и смартфонов. Минимальный набор контента и функционала, упрощенный интерфейс для максимальной удобства использования. */
+
+@media screen and (max-width: 575px) {
+    .container {
+        width: auto;
+    }
+
+
+}
