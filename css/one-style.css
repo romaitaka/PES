@@ -393,7 +393,7 @@
     gap: 15px;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    animation: slide 25s linear infinite;
+    animation: slide 30s linear infinite;
     /* Здесь вы можете настроить продолжительность анимации и тип анимации (linear, ease и т.д.) */
 }
 
