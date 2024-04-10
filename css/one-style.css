@@ -58,6 +58,47 @@
     background-image: url('../img/card6_banner.jpg');
 }
 
+.banner7 {
+    background-image: url('../img/card7.jpg');
+}
+
+
+.banner8 {
+    background-image: url('../img/card8.jpg');
+}
+
+.banner9 {
+    background-image: url('../img/card9_banner.jpg');
+}
+
+.banner10 {
+    background-image: url('../img/card10.jpg');
+}
+
+.banner11 {
+    background-image: url('../img/card11.jpg');
+}
+
+.banner12 {
+    background-image: url('../img/card12.jpg');
+}
+
+.banner13 {
+    background-image: url('../img/card13.jpg');
+}
+
+.banner14 {
+    background-image: url('../img/card14.jpg');
+}
+
+.banner15 {
+    background-image: url('../img/card15.jpg');
+}
+
+.banner16 {
+    background-image: url('../img/card16.jpg');
+}
+
 .one-style__banner-overlay {
     position: absolute;
     top: 0;
