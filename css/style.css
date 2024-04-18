@@ -694,6 +694,14 @@ textarea {
         width: 700px;
     }
 
+    .header__left {
+        display: none;
+    }
+
+    .header__right {
+        display: none;
+    }
+
     .one-style__banner-label {
         max-width: 700px;
     }
@@ -705,6 +713,63 @@ textarea {
     .one-style__banner {
         height: 70vh;
     }
+
+    .feature__param-vars {
+        width: auto;
+    }
+
+    .feature__param-var {
+        width: 100%;
+    }
+
+    .feature__description-var {
+        width: 50%;
+    }
+
+    .feature__price-var {
+        width: auto;
+    }
+
+    .feature__params-text {
+        font-size: 16px;
+    }
+
+    .feature__param-title {
+        font-size: 14px;
+    }
+
+    .feature__params-wrapper {
+        padding-left: 0;
+        row-gap: 10px;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+    .feature__param {
+        width: 30%;
+        margin: 0;
+    }
+
+    .feature__param-title {
+        width: auto;
+    }
+
+    .feature__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .feature__slider-wrapper {
+        width: 80%;
+        padding-left: 0;
+    }
+
+    .feature__param-price {
+        margin-top: 20px;
+        width: 65%;
+    }
 }
 
 /* Small: 576px - 767px */
@@ -712,7 +777,51 @@ textarea {
 
 @media screen and (max-width: 767px) {
     .container {
-        width: 500px;
+        width: 560px;
+    }
+
+    .container__header {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center;
+        margin-inline: auto;
+    }
+
+    .header {
+        padding-block: 15px;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        gap: 10px;
+        margin-block: auto;
+    }
+
+    .nav-item {
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .nav-item2 {
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .socials {
+        padding: 0;
+        margin-left: 0;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .logo {
+        margin-block: auto;
+    }
+
+    .logo__img {
+        width: auto;
+        height: 55px;
     }
 }
 
@@ -724,5 +833,5 @@ textarea {
         width: auto;
     }
 
-
+    
 }

@@ -53,3 +53,17 @@ tbody img {
     display: block;
     margin-inline: auto;
 }
+
+@media screen and (max-width: 991px) {
+    thead th {
+        width: auto;
+        font-size: 18px;
+        padding: 18px 5px;
+        width: 22%;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+}
