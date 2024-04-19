@@ -41,6 +41,7 @@
     font-weight: normal;
     text-transform: uppercase;
     transition: inset .3s .3s ease-out;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 /* Общие стили для параграфов и кнопки */

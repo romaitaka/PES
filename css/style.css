@@ -770,6 +770,21 @@ textarea {
         margin-top: 20px;
         width: 65%;
     }
+
+    .modal-slider-button_left {
+        left: 10px;
+    }
+
+    .modal-slider-button_right {
+        right: 10px;
+    }
+
+    .modal-content-img {
+        width: 100%;
+        height: 93%;
+        margin-inline: 0;
+        margin-block: auto;
+    }
 }
 
 /* Small: 576px - 767px */
@@ -823,15 +838,171 @@ textarea {
         width: auto;
         height: 55px;
     }
+
+    .one-style__banner-label {
+        text-align: center;
+    }
+
+    .modal-content-img {
+        width: 90%;
+        height: 80%;
+    }
+
+    .modal-slider-button_left {
+        left: 0;
+    }
+
+    .modal-slider-button_right {
+        right: 60px;
+    }
 }
 
-/* Extra small: 0px (320px) - 575px */
-/* Для самых маленьких устройств и смартфонов. Минимальный набор контента и функционала, упрощенный интерфейс для максимальной удобства использования. */
-
+/* : 481 - 575px*/
 @media screen and (max-width: 575px) {
     .container {
         width: auto;
     }
 
-    
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-nav-menu {
+        display: flex;
+    }
+
+    .mobile-nav-menu__img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-link {
+        width: 30px;
+        height: 30px;
+    }
+
+    .projects-wrapper {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 0;
+        row-gap: 15px;
+    }
+
+    .card-wrapper {
+        width: 100%;
+        height: 82vh;
+    }
+
+    .catalog {
+        padding-block: 15px;
+    }
+
+    .catalog__title {
+        font-size: 30px;
+    }
+
+    .about-us__main-block-text {
+        font-size: 30px;
+    }
+
+    .map {
+        min-width: 450px;
+        min-height: 450px;
+        max-width: 100%;
+        max-height: 82vh;
+    }
+
+    .contacts {
+        padding-top: 15px;
+    }
+
+    .description__text-wrapper {
+        padding: 15px;
+    }
+
+    .description__banner-wrapper {
+        padding: 15px;
+    }
+
+    .description__banner-title {
+        width: 100%;
+    }
+
+    .table {
+        display: none;
+    }
+
+    .modal_img {
+        width: 480px;
+    }
+
+    .modal-content-img {
+        width: 480px;
+        height: 80vh;
+        margin-top: 15px;
+    }
+
+    .arrow-down {
+        display: none;
+    }
+
+    .modal-slider-button_left {
+        left: 0;
+    }
+
+    .modal-slider-button_right {
+        right: 0;
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+/* Для самых маленьких устройств и смартфонов. Минимальный набор контента и функционала, упрощенный интерфейс для максимальной удобства использования. */
+@media screen and (max-width: 480px) {
+    .container {
+        width: auto;
+    }
+
+    .container__header {
+        flex-direction: column;
+    }
+
+    .main-banner__title {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .main-banner {
+        padding-left: 0;
+    }
+
+    .map {
+        width: auto;
+    }
+
+    .bread-crumbs {
+        margin-left: 10px;
+    }
+
+    .modal_img {
+        width: 320px;
+    }
+
+    .modal-content-img {
+        width: inherit;
+        height: 55vh;
+        margin-top: 30%;
+    }
+
+    .modal-slider-button_left {
+        top: 30%;
+    }
+
+    .modal-slider-button_right {
+        top: 30%;
+    }
+
+    .modal-slider-arrow {
+        width: 30px;
+        height: 30px;
+    }
 }

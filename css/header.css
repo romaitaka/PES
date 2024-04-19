@@ -76,6 +76,7 @@
 
 .socials {
     display: flex;
+    align-items: center;
     gap: 20px;
     padding-top: 21px;
     padding-bottom: 10px;
@@ -107,6 +108,16 @@
     font-weight: bold;
     text-transform: uppercase;
     justify-content: space-between;
+}
+
+.mobile-nav-menu {
+    gap: 10px;
+    display: none;
+}
+
+.mobile-nav-menu__img {
+    width: 24px;
+    height: 24px;
 }
 
 .nav-item {
